@@ -106,7 +106,7 @@ window.addEventListener("load", function () {
     }
 });
     
-    const eventDate = new Date("November 6, 2024 23:59:59").getTime();
+    const eventDate = new Date("November 6, 3000 23:59:59").getTime();
 
     
     const countdownInterval = setInterval(function () {
