@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+/* Section Styling */
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+#theme{
+    margin-left: 10px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+#name{
+    height: 25px;
+    border-radius: 5px;
+}
+#save{
+    height: 25px;
+    border-radius: 5px;
+    width: 50px;
+    background-color: green;
+    cursor: pointer;
+    color:white;
+}
+
+.typing-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#typing-text::after {
+    color:orangered;
+    content: "|";
+    animation: blink 0.9s infinite step-end;
+}
+#countdown {
+    align-self: center;
+    font-size: 2em;
+}
+.count-box{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    width:600px;
+    color:#333;
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+/* Blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

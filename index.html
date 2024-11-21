@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#" onclick="navigateTo('about')">About</a></li>
+            <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+            <select id="theme" name="theme">
+                <option id="lm" value="light">Light Theme</option>
+                <option id="dm" value="dark">Dark  Theme</option>
+            </select>
+            <input type="radio" name="theme" id="lm" value="light">
+            <label for="light">light</label>
+            <input type="radio" name="theme" id="lm" value="dark">
+            <label for="dark">dark</label>
+            <input type="text" placeholder="      Enter your name" class="name" id="name">
+            <button id="save" onclick="saveName()">Save</button>
+        </ul>
+    </nav>
+    <section id="home" class="content-section">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the home section.</p>
+    </section>
+
+    <section id="about" class="content-section" style="display: none;">
+        <h1>About Us</h1>
+        <p>This is the about section.</p>
+    </section>
+
+    <section id="contact" class="content-section" style="display: none;">
+        <h1>Contact Us</h1>
+        <p>This is the contact section.</p>
+    </section>
+    <div class="typing-container">
+        <h2 id="typing-text"></h2>
+    </div>
+    <div class="count-box">
+        <h1 style="margin-left: 15px;">Days Until The Assignment Deadline!</h1>
+            <div class="count">
+                <div id="countdown" style="margin-left: 225px;">Loading...</div>
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
